@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website - Jahn ongoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e3a27544a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"></div>
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="headertext">
+            <p>Web Developer</p>
+            <h1>Hi, am <span>Jahn</span><br> Ongoro from Kenya</h1>
+        </div>
+    </div>
+    ------about------- ->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="phone backgroung.png.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>jahn ongoro web dev, IT technician,data analyst ready for work</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <i class="fa-solid fa-rectangle-code"></i>
+                        <ul>
+                            <li><span>IT</span><BR>SPECIALIST</li>
+                            <li><span>WEB</span><BR>DEVELOPER</li>
+                            <li><span>DATA</span><BR>ANALYST</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2019 kplc</span><BR>HELP-DESK TECHNICIAN</li>
+                            <li><span>2021-KIRDI</span><BR>TECHNICIAN</li>
+                            <li><span>2023-MEDSTAR PHARMACY</span><BR>DATA ANALYST</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>High school</span><BR>Ayiecho Nyatao</li>
+                            <li><span>college</span><BR>The kisumu National Polytechnic</li>
+                            <li><span>Avancement</span><BR>ALX-kenya,Ajira digital training web dev.</li>  
+                        </ul>
+                    </div>
+                    -------services---------- ->
+                        <div>
+                            <div id="services">
+                                <div class="conta">
+                                    <h1 class="sub-title">My Services</h1>
+                                    <div class="sevices-list"></div>
+                                    <div>
+                                        <i class="fa-regular fa-square-code"></i>
+                                        <h2>Web Development</h2>
+                                        <p>
+                                            I offer web development please reach me or hire me i am good in frontend
+                                        </p>
+                                        <a href="#">learn more</a>
+                                    </div>   
+                                    <div>
+                                        <i class="fa-thin fa-code-commit"></i>
+                                        <h2>Web Design</h2>
+                                        <p>
+                                            I offer web design please reach me or hire me.
+                                        </p>
+                                        <a href="#">learn more</a>
+                                    </div>   
+                                    <div>
+                                        <i class="fa-solid fa-laptop-code"></i>
+                                        <h2>IT specialist</h2>
+                                        <p>
+                                            good in database management,data analyst,cybersecurity.
+                                        </p>
+                                        <a href="#">learn more</a>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+
+<script>
+    var tablinks = documents.getElementsByclassName("tab-links");
+    var tabcontents = documents.getElementsByclassName("tab-contents")
+
+    function opentab(tabname){
+        for(tab-link of tab-links){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");     
+    }
+    event.currentTarget.classList.add('active-link');
+    document.getElementById('tabname').classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
